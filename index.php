@@ -8,6 +8,7 @@
     <!-- Styles -->
     <style media="all" type="text/css"> @import url(/bundles/felib/bootstrap/2.3.2/css/bootstrap.css); </style>
     <style media="all" type="text/css"> @import url(/bundles/felib/bootstrap/2.3.2/css/bootstrap-responsive.css); </style>
+    <style media="all" type="text/css"> @import url(/bundles/felib/magnific-popup/magnific-popup.css); </style>
     <style media="all" type="text/css"> @import url(/bundles/cms/css/frontend.css); </style>
     <style media="all" type="text/css">
         @import url(/theme/css/screen.css);
@@ -21,7 +22,8 @@
     <script type="text/javascript">var basePath = "/"</script>
     <script src="/bundles/felib/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="/bundles/felib/jquery-cookie/1.3.1/jquery.cookie.js" type="text/javascript"></script>
-    <script src="/bundles/felib/bootstrap/2.3.2/js/bootstrap.js" type="text/javascript"></script>
+    <script src="/bundles/felib/bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/bundles/felib/magnific-popup/jquery.magnific-popup.js" type="text/javascript"></script>
     <script src="/bundles/cms/js/frontend.js" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -126,7 +128,7 @@
                     }
                 }
             },
-            "node":{
+            "nodes":{
                 "__node_4":{
                     "edit":{
                         "title":"Редактировать",
@@ -156,11 +158,11 @@
                         "title":"Редактировать меню",
                         "default":true,
                         "descr":"Пункты меню",
-                        "uri":"#/admin/node/5/1"
+                        "uri":"/admin/node/5/1"
                     },
                     "cms_node_properties":{
                         "title":"Параметры модуля (Menu)",
-                        "uri":"#/admin/structure/node/5/",
+                        "uri":"/admin/structure/node/5/",
                         "descr":null
                     }
                 },
@@ -191,6 +193,16 @@
             }
 
         };</script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#test_ajax_modal').magnificPopup({
+                type: 'ajax',
+                alignTop: true,
+                overflowY: 'scroll'
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -248,6 +260,7 @@
 
             </div>
 
+            <a id="test_ajax_modal" href="/test_ajax_modal.php">test_ajax_modal</a>
 
             <div id="content">
 

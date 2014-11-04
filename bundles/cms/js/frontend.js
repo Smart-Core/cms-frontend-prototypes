@@ -29,15 +29,17 @@ $(document).ready(function() {
                         function(){
                             var elem = this;
 
-                            if (typeof cms_front_controls.node[$(elem).attr('id')] === 'object') {
-                                var node = cms_front_controls.node[$(elem).attr('id')];
+                            if (typeof cms_front_controls.nodes[$(elem).attr('id')] === 'object') {
+                                var node = cms_front_controls.nodes[$(elem).attr('id')];
 
                                 var node_buttons = '<div class="cmf-frontadmin-node-buttons btn-group">';
 
                                 // сначала поиск действия по умолчанию.
                                 $.each(node, function(index, value) {
+                                    var button_id = 'a' + $(elem).attr('id') + index;
+
                                     if (value.default == true) {
-                                        node_buttons += '<button OnClick="window.location=\'' + value.uri
+                                        node_buttons += '<button id="' + button_id + '" OnClick="window.location=\'' + value.uri
                                             + '?redirect_to=' + window.location.pathname + window.location.search
                                             + '\'" title="' + value.descr
                                             + '" class="btn btn-small popup-trigger">' + value.title + '</button>';
@@ -49,7 +51,9 @@ $(document).ready(function() {
 
                                 // затем отрисовка пунктов меню.
                                 $.each(node, function(index, value) {
-                                    node_buttons += '<li><a class="popup-trigger" title="' + value.descr
+                                    var link_id = 'a' + $(elem).attr('id') + index;
+
+                                    node_buttons += '<li><a class="popup-trigger" id="' + link_id + '" title="' + value.descr
                                         + '" href="' + value.uri + '?redirect_to=' + window.location.pathname + window.location.search + '">' ;
 
                                     if (value.default == true) {
@@ -57,6 +61,14 @@ $(document).ready(function() {
                                     } else {
                                         node_buttons += value.title + '</a></li>';
                                     }
+
+                                    $('#' + link_id).magnificPopup({
+                                        type: 'ajax',
+                                        alignTop: true,
+                                        overflowY: 'scroll'
+                                    });
+
+                                    //alert('#' + link_id);
                                 });
 
                                 node_buttons += '</ul></div>';
@@ -87,7 +99,6 @@ $(document).ready(function() {
         $('.navbar .btn[data-toggle="button"]').click();
     }
 });
-
 
 function renderToolbar() {
     $('body')
