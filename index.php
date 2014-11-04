@@ -36,32 +36,32 @@
                             "modules":{
                                 "title":"Модули",
                                 "icon":"cog",
-                                "uri":"/admin/module/"
+                                "uri":"#/admin/module/"
                             },
                             "files":{
                                 "title":"Файлы",
                                 "icon":"file",
-                                "uri":"/admin/files/"
+                                "uri":"#/admin/files/"
                             },
                             "blocks":{
                                 "title":"Блоки",
                                 "icon":"th",
-                                "uri":"/admin/structure/block/"
+                                "uri":"#/admin/structure/block/"
                             },
                             "users":{
                                 "title":"Пользователи",
                                 "icon":"user",
-                                "uri":"/admin/user/"
+                                "uri":"#/admin/user/"
                             },
                             "config":{
                                 "title":"Конфигурация",
                                 "icon":"tasks",
-                                "uri":"/admin/config/"
+                                "uri":"#/admin/config/"
                             },
                             "appearance":{
                                 "title":"Оформление",
                                 "icon":"picture",
-                                "uri":"/admin/appearance/"
+                                "uri":"#/admin/appearance/"
                             }
                         }
                     },
@@ -73,31 +73,31 @@
                             "folder_edit":{
                                 "title":"Редактировать папку",
                                 "icon":"edit",
-                                "uri":"/admin/structure/folder/1/"
+                                "uri":"#/admin/structure/folder/1/"
                             },
                             "folder_new":{
                                 "title":"Добавить папку",
                                 "icon":"plus",
-                                "uri":"/admin/structure/folder/create/1/"
+                                "uri":"#/admin/structure/folder/create/1/"
                             },
                             "folder_all":{
                                 "title":"Вся структура",
                                 "icon":"book",
-                                "uri":"/admin/structure/"
+                                "uri":"#/admin/structure/"
                             },
                             "diviver_1":"diviver",
                             "node_new":{
                                 "title":"Добавить модуль",
                                 "icon":"plus",
-                                "uri":"/admin/structure/node/create/1/"
+                                "uri":"#/admin/structure/node/create/1/"
                             }
                         }
                     }
                 },
                 "right":{
                     "eip_toggle":[
-                        "Просмотр",
-                        "Редактировать"
+                        "Режим правки: ОТКЛ.",
+                        "Режим правки: ВКЛ."
                     ],
                     "user":{
                         "title":"root",
@@ -105,20 +105,20 @@
                         "items":{
                             "admin":{
                                 "title":"Панель управления",
-                                "uri":"/admin",
+                                "uri":"#/admin",
                                 "icon":"cog",
                                 "overalay":false
                             },
                             "profile":{
                                 "title":"Мой профиль",
-                                "uri":"/admin/user/1/",
+                                "uri":"#/admin/user/1/",
                                 "icon":"user",
                                 "overalay":false
                             },
                             "diviver_1":"diviver",
                             "logout":{
                                 "title":"Выход",
-                                "uri":"/admin/logout",
+                                "uri":"#/admin/logout",
                                 "icon":"off",
                                 "overalay":false
                             }
@@ -131,60 +131,61 @@
                     "edit":{
                         "title":"Редактировать",
                         "descr":"Текстовый блок",
-                        "uri":"/admin/node/4/",
+                        "uri":"#/admin/node/4/",
                         "default":true
                     },
                     "cms_node_properties":{
-                        "title":"Свойства ноды",
-                        "uri":"/admin/structure/node/4/"
+                        "title":"Параметры модуля",
+                        "uri":"#/admin/structure/node/4/"
                     }
                 },
                 "__node_13":{
                     "edit":{
                         "title":"Редактировать",
                         "descr":"Текстовый блок",
-                        "uri":"/admin/node/13/",
+                        "uri":"#/admin/node/13/",
                         "default":true
                     },
                     "cms_node_properties":{
-                        "title":"Свойства ноды",
-                        "uri":"/admin/structure/node/13/"
+                        "title":"Параметры модуля",
+                        "uri":"#/admin/structure/node/13/"
                     }
                 },
                 "__node_5":{
                     "edit":{
-                        "title":"Редактировать",
+                        "title":"Редактировать меню",
                         "default":true,
                         "descr":"Пункты меню",
-                        "uri":"/admin/node/5/1"
+                        "uri":"#/admin/node/5/1"
                     },
                     "cms_node_properties":{
-                        "title":"Свойства ноды",
-                        "uri":"/admin/structure/node/5/"
+                        "title":"Параметры модуля (Menu)",
+                        "uri":"#/admin/structure/node/5/",
+                        "descr":null
                     }
                 },
                 "__node_17":{
                     "cms_node_properties":{
-                        "title":"Свойства ноды",
-                        "uri":"/admin/structure/node/17/"
+                        "title":"Параметры модуля",
+                        "uri":"#/admin/structure/node/17/"
                     }
                 },
                 "__node_1":{
                     "edit":{
                         "title":"Редактировать",
                         "descr":"Текстовый блок",
-                        "uri":"/admin/node/1/",
+                        "uri":"#/admin/node/1/",
                         "default":true
                     },
                     "cms_node_properties":{
-                        "title":"Свойства ноды",
-                        "uri":"/admin/structure/node/1/"
+                        "title":"Параметры модуля",
+                        "uri":"#/admin/structure/node/1/"
                     }
                 },
                 "__node_6":{
                     "cms_node_properties":{
-                        "title":"Свойства ноды",
-                        "uri":"/admin/structure/node/6/"
+                        "title":"Параметры модуля",
+                        "uri":"#/admin/structure/node/6/"
                     }
                 }
             }
@@ -204,35 +205,35 @@
                         <a href="/">Главная</a>
                     </li>
                     <li>
-                        <a href="/news/">Новости</a>
+                        <a href="#/news/">Новости</a>
                         <ul class="menu_level_1">
-                            <li class="first last"><a href="/news/unser_news/">Вложенная</a></li>
+                            <li class="first last"><a href="#/news/unser_news/">Вложенная</a></li>
                         </ul>
                     </li>
-                    <li><a href="/simple/">Так просто ;)</a></li>
+                    <li><a href="#/simple/">Так просто ;)</a></li>
                     <li>
-                        <a href="/slider/">Слайдер</a>
+                        <a href="#/slider/">Слайдер</a>
                         <ul class="menu_level_1">
-                            <li class="first last"><a href="/slider/nivo/">Nivo</a></li>
+                            <li class="first last"><a href="#/slider/nivo/">Nivo</a></li>
                         </ul>
                     </li>
-                    <li><a href="/blog/">Блог</a></li>
-                    <li><a href="/gallery/">Фотогалерея</a></li>
+                    <li><a href="#/blog/">Блог</a></li>
+                    <li><a href="#/gallery/">Фотогалерея</a></li>
                     <li title="123 561">
-                        <a href="/about/">О компании</a>
+                        <a href="#/about/">О компании</a>
                         <ul class="menu_level_1">
                             <li class="first last">
-                                <a href="/about/inner/">Вложенная папка</a>
+                                <a href="#/about/inner/">Вложенная папка</a>
                                 <ul class="menu_level_2">
-                                    <li class="first last"><a href="/about/inner/in2/">Еще одна вложенная</a></li>
+                                    <li class="first last"><a href="#/about/inner/in2/">Еще одна вложенная</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="/feedback/">Обратная связь</a></li>
-                    <li><a href="/catalog/">Каталог</a></li>
-                    <li><a href="/catalog2/">Каталог 2</a></li>
-                    <li class="last"><a href="/user/">Аккаунт пользователя</a></li>
+                    <li><a href="#/feedback/">Обратная связь</a></li>
+                    <li><a href="#/catalog/">Каталог</a></li>
+                    <li><a href="#/catalog2/">Каталог 2</a></li>
+                    <li class="last"><a href="#/user/">Аккаунт пользователя</a></li>
                 </ul>
             </div>
 
@@ -265,13 +266,11 @@
                 <div class="cmf-frontadmin-node" id="__node_17">
                     <hr /><h3>Последние новости</h3>
 
-                    <h5><a href="/news/pochemu-my-predpochitaem-symfony-2-vmesto-yii.html">Почему мы предпочли Symfony 2 вместо Yii</a></h5>
-                    <p><b>27.01.14, 12:42:25</b></p>
                     <p>Перевод статьи <a href="http://weavora.com/blog/2013/03/26/why-we-prefer-symfony-2-over-yii-framework/" target="_blank">Why We Prefer Symfony 2 Over Yii Framework</a>.</p>
-                    <h5><a href="/news/unifying-php.html">Unifying PHP</a></h5>
+                    <h5><a href="#/news/unifying-php.html">Unifying PHP</a></h5>
                     <p><b>27.01.14, 12:34:21</b></p>
                     <p>Over the last few weeks, there has been lots of talk about PHP community, packages, and tribalism. So, I thought I would offer a few thoughts on the topic. Currently, Laravel is the most eclectic full-stack PHP framework in existence. In other words, Laravel is the only full-stack PHP framework that actively eschews tribalism.</p>
-                    <h5><a href="/news/symfony-2-for-php-developers-part-2.html">Symfony 2 for PHP developers – Part 2</a></h5>
+                    <h5><a href="#/news/symfony-2-for-php-developers-part-2.html">Symfony 2 for PHP developers – Part 2</a></h5>
                     <p><b>27.01.14, 12:12:31</b></p>
                     <p>Dependency Injection is at the heart of Symfony 2. To understand Symfony 2 you need to understand Dependency Injection.</p>
 

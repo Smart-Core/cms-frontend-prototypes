@@ -109,7 +109,7 @@ function renderToolbar() {
         $.each(cms_front_controls.toolbar.right, function(index, value) {
             if (index === 'eip_toggle') {
                 $('body > div.navbar > div.navbar-inner > div.container > div.nav-collapse > div.pull-right')
-                    .prepend('<button type="button" class="btn btn-primary span2" data-toggle="button" class-toggle="btn-danger">Просмотр</button>');
+                    .prepend('<button type="button" class="btn btn-primary span2" data-toggle="button" class-toggle="btn-danger">' + value[0] + '</button>');
             } else {
                 var item = '<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-' + value.icon + ' icon-white"></i>&nbsp;' + value.title + '<b class="caret"></b></a>';
 
