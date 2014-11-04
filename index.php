@@ -199,8 +199,9 @@
             $('#test_ajax_modal').magnificPopup({
                 type: 'ajax',
                 alignTop: true,
-                overflowY: 'scroll',
-                modal: true
+                closeOnContentClick: false,
+                closeOnBgClick: false,
+                overflowY: 'scroll'
             });
         });
     </script>
